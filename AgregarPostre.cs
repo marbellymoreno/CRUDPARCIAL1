@@ -45,7 +45,7 @@ namespace CRUDPARCIAL1
                     // Editar un postre existente
                     Postres postre = new Postres
                     {
-                        IdPostre = _id, // Asigna el ID del postre que se va a actualizar
+                        IdPostre = _id,
                         Nombre = textBoxNombre.Text,
                         Descripcion = textBoxDescripcion.Text,
                         Precio = decimal.Parse(textBoxPrecio.Text),
