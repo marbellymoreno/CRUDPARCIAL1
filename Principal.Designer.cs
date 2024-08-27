@@ -32,16 +32,21 @@
             this.btnBuscar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxNombre = new System.Windows.Forms.TextBox();
+            this.buttonPrinciAdd = new System.Windows.Forms.Button();
+            this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPostres)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvPostres
             // 
             this.dgvPostres.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPostres.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Editar});
             this.dgvPostres.Location = new System.Drawing.Point(12, 12);
             this.dgvPostres.Name = "dgvPostres";
             this.dgvPostres.Size = new System.Drawing.Size(839, 336);
             this.dgvPostres.TabIndex = 0;
+            this.dgvPostres.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPostres_CellContentClick);
             // 
             // btnBuscar
             // 
@@ -70,11 +75,27 @@
             this.textBoxNombre.TabIndex = 4;
             this.textBoxNombre.TextChanged += new System.EventHandler(this.textBoxNombre_TextChanged);
             // 
+            // buttonPrinciAdd
+            // 
+            this.buttonPrinciAdd.Location = new System.Drawing.Point(864, 325);
+            this.buttonPrinciAdd.Name = "buttonPrinciAdd";
+            this.buttonPrinciAdd.Size = new System.Drawing.Size(149, 23);
+            this.buttonPrinciAdd.TabIndex = 5;
+            this.buttonPrinciAdd.Text = "Agregar Postre";
+            this.buttonPrinciAdd.UseVisualStyleBackColor = true;
+            this.buttonPrinciAdd.Click += new System.EventHandler(this.buttonPrinciAdd_Click);
+            // 
+            // Editar
+            // 
+            this.Editar.HeaderText = "Editar";
+            this.Editar.Name = "Editar";
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1028, 372);
+            this.Controls.Add(this.buttonPrinciAdd);
             this.Controls.Add(this.textBoxNombre);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnBuscar);
@@ -93,6 +114,8 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxNombre;
+        private System.Windows.Forms.Button buttonPrinciAdd;
+        private System.Windows.Forms.DataGridViewImageColumn Editar;
     }
 }
 
