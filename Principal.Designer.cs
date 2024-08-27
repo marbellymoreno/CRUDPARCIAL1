@@ -34,6 +34,7 @@
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.buttonPrinciAdd = new System.Windows.Forms.Button();
             this.Editar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Eliminar = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPostres)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,7 +42,8 @@
             // 
             this.dgvPostres.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPostres.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Editar});
+            this.Editar,
+            this.Eliminar});
             this.dgvPostres.Location = new System.Drawing.Point(12, 12);
             this.dgvPostres.Name = "dgvPostres";
             this.dgvPostres.Size = new System.Drawing.Size(839, 336);
@@ -90,6 +92,11 @@
             this.Editar.HeaderText = "Editar";
             this.Editar.Name = "Editar";
             // 
+            // Eliminar
+            // 
+            this.Eliminar.HeaderText = "Eliminar";
+            this.Eliminar.Name = "Eliminar";
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -116,6 +123,7 @@
         private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.Button buttonPrinciAdd;
         private System.Windows.Forms.DataGridViewImageColumn Editar;
+        private System.Windows.Forms.DataGridViewImageColumn Eliminar;
     }
 }
 

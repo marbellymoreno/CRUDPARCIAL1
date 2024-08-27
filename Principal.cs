@@ -70,6 +70,31 @@ namespace CRUDPARCIAL1
                         agregarcliente.ShowDialog();
                         Datos();
                     }
+                    else if (dgvPostres.Columns[e.ColumnIndex].Name.Equals("Eliminar"))
+                    {
+                        var desicion = MessageBox.Show("¿Está seguro que desea eliminar el registro?", "Eliminar Postre", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                        _postresDAL = new PostresDAL();
+
+                        int resultado = 0;
+
+                        if (desicion != DialogResult.Yes)
+                        {
+                            MessageBox.Show("El registro se continua mostrando en el listado.");
+                        }
+                        else
+                        {
+                            resultado = _postresDAL.EliminarPostre(id);
+                            if (resultado > 0)
+                            {
+                                MessageBox.Show("El registro eliminado con exito.");
+                                Datos();
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se logró eliminar el registro.");
+                            }
+                        }
+                    }
                 }
             }
             catch (Exception ex)
