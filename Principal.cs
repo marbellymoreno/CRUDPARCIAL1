@@ -1,4 +1,5 @@
 ﻿using Datos;
+using Modelos;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,9 +22,26 @@ namespace CRUDPARCIAL1
             dgvPostres.DataSource = _postresDAL.ObtenerPostres();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
+            _postresDAL = new PostresDAL();
+            string nombre = textBoxNombre.Text;
+            dgvPostres.DataSource = _postresDAL.ObtenerPostresPorNombre(nombre);
+        }
 
+        private void textBoxNombre_TextChanged(object sender, EventArgs e)
+        {
+            _postresDAL = new PostresDAL();
+            string Nombre = textBoxNombre.Text;
+
+            if (Nombre != "")
+            {
+                dgvPostres.DataSource = _postresDAL.Filtrar(Nombre);
+            }
+            else
+            {
+                dgvPostres.DataSource = _postresDAL.ObtenerPostres();
+            }
         }
     }
 }
