@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDPARCIAL1", "CRUDPARCIAL1.csproj", "{2FCAA9CE-9E1B-442A-88F9-01F2F4FA9860}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaVista", "CapaVista.csproj", "{2FCAA9CE-9E1B-442A-88F9-01F2F4FA9860}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelos", "..\Modelos\Modelos.csproj", "{9423218F-BA87-4AC3-88BC-1810AA5DAB7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "..\Datos\Datos.csproj", "{34FBE397-C251-4D64-8CD8-1D36C21C18B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "..\Datos\CapaDatos.csproj", "{34FBE397-C251-4D64-8CD8-1D36C21C18B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
