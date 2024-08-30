@@ -1,0 +1,6 @@
+C:\Users\MINEDUCYT\Pictures\UNAB\CICLO 4 - 2024\ProgramaciónII\PARCIAL1\Modelos\bin\Debug\Modelos.dll
+C:\Users\MINEDUCYT\Pictures\UNAB\CICLO 4 - 2024\ProgramaciónII\PARCIAL1\Modelos\bin\Debug\Modelos.pdb
+C:\Users\MINEDUCYT\Pictures\UNAB\CICLO 4 - 2024\ProgramaciónII\PARCIAL1\Modelos\obj\Debug\Modelos.csproj.AssemblyReference.cache
+C:\Users\MINEDUCYT\Pictures\UNAB\CICLO 4 - 2024\ProgramaciónII\PARCIAL1\Modelos\obj\Debug\Modelos.csproj.CoreCompileInputs.cache
+C:\Users\MINEDUCYT\Pictures\UNAB\CICLO 4 - 2024\ProgramaciónII\PARCIAL1\Modelos\obj\Debug\Modelos.dll
+C:\Users\MINEDUCYT\Pictures\UNAB\CICLO 4 - 2024\ProgramaciónII\PARCIAL1\Modelos\obj\Debug\Modelos.pdb
